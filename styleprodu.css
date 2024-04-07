@@ -3,7 +3,19 @@
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: rgb(107, 106, 106);
+}
+
+header h1 {
+    margin: 45px 0px 0px 10px;
+}
+
+.logo img {
+    width: 80px;
+    margin: 25px 10px 0px 0px;
 }
 
 nav{
@@ -11,7 +23,7 @@ nav{
 	margin: auto;
 	background-color: rgba(255, 0, 0, 0.5);
 	font-size: 15px;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 .menu-horizontal{
 	list-style: none;
@@ -50,9 +62,7 @@ nav{
 
 
 body {
-    background: rgb(195,232,236);
-    background: linear-gradient(35deg, rgba(195,232,236,1) 47%, rgba(31,126,184,1) 100%);
-    margin: 0;
+    background: white;
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -72,7 +82,7 @@ body {
     margin: 10px;
 }
 
-div img {
+.container img {
     width: 250px;
     height: 200px;
     margin-top: 10px;
