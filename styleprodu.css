@@ -54,6 +54,9 @@ body {
     background: linear-gradient(35deg, rgba(195,232,236,1) 47%, rgba(31,126,184,1) 100%);
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 .container {

@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: rgb(107, 106, 106);
+}
+
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(255, 0, 0, 0.5);
+	font-size: 15px;
+	margin-top: 50px;
+}
+.menu-horizontal
+{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: black;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: disc;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+body {
+    background: rgb(195,232,236);
+    background: linear-gradient(35deg, rgba(195,232,236,1) 47%, rgba(31,126,184,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.container aside {
+    display: flex;
+    flex: 45%;
+    color: rgb(107, 106, 106);
+}
+
+.container section {
+    font-size: 25px;
+    color: rgb(107, 106, 106);
+}
+
+.banner {
+    background-color: rgb(95, 158, 160, 0.1);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    
+}
