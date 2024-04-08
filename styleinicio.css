@@ -74,13 +74,14 @@ body {
 
 .container {
     display: flex;
-    height: 90vh;
+    margin: 0px 5px 0px 5px;
 }
 
 .container aside {
     display: flex;
     flex: 45%;
     color: rgb(107, 106, 106);
+    padding-right: 25px;
 }
 
 .container section {
@@ -88,8 +89,14 @@ body {
     color: rgb(107, 106, 106);
 }
 
-.banner {
-    background-color: rgb(95, 158, 160, 0.1);
+
+.esloga {
+    text-align: center;
+}
+
+.banner video{
+    width: 1150px;
+       
 }
 
 
