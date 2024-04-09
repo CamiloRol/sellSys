@@ -8,6 +8,15 @@ header {
     color: rgb(107, 106, 106);
 }
 
+header h1 {
+    margin: 45px 0px 0px 10px;
+}
+
+.logo img {
+    width: 80px;
+    margin: 25px 10px 0px 0px;
+}
+
 nav{
 	margin: auto;
 	background-color: rgba(255, 0, 0, 0.5);
