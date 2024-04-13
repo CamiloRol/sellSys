@@ -1,32 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylepar.css">
+    <title>Carrusel de Fotografías</title>
+    <style>
+        /* Estilos para el carrusel */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 50%;
+            height: auto;
+            transition: transform 0.5s ease;
+            filter: blur(5px);
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            transform: scale(0.8); /* Reducimos la escala de todas las imágenes */
+        }
+
+        .carousel img.center {
+            filter: none;
+            transform: scale(1); /* Imagen central sin desenfoque y a escala normal */
+        }
+
+        /* Estilos para los botones de navegación */
+        .carousel-button {
+            cursor: pointer;
+            font-size: 45px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button-left {
+            left: 10px;
+        }
+
+        .carousel-button-right {
+            right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="parallax-container">
-        <div class="image image_background">
-            <img src="recursos/parallax_using.jpg" alt="backparallax">
-        </div>
-
-        <div class="image image-middle">
-            <div class="card one"></div>
-            <div class="card two"></div>
-            <div class="card three"></div>
-            <div class="card four"></div>
-            <div class="card five"></div>
-            <div class="card six"></div>
-            <div class="card seven"></div>
-        </div>
-
-        <div class="image image_foreground">
-            <img src="recursos/pngegg.png" alt="mario">
-        </div>
-
+    <div class="carousel">
+        <img src="recursos/imgrid1.jpg" alt="Fotografía 1" class="center">
+        <img src="recursos/imgrid2.jpg" alt="Fotografía 2">
+        <img src="recursos/imgrid3.jpg" alt="Fotografía 3">
+        <img src="recursos/imgrid4.jpg" alt="Fotografía 4">
+        <img src="recursos/imgrid5.jpg" alt="Fotografía 5">
+        <img src="recursos/imgrid6.jpg" alt="Fotografía 6">
+        <img src="recursos/imgrid7.jpg" alt="Fotografía 7">
     </div>
-    
+
+    <!-- Botones de navegación -->
+    <div class="carousel-button carousel-button-left" onclick="prevSlide()">&#10094;</div>
+    <div class="carousel-button carousel-button-right" onclick="nextSlide()">&#10095;</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+
+        function showSlide() {
+            slides.forEach((slide, index) => {
+                const offset = index - currentSlide;
+                slide.style.transform = `translateX(${offset * 100}%)`;
+            });
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide();
+        }
+
+        // Mostrar la primera imagen al cargar la página
+        showSlide();
+    </script>
 </body>
 </html>
