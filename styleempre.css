@@ -5,11 +5,27 @@
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: rgb(107, 106, 106);
 }
 
+header a {
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+}
+
+h1:hover {
+    transform: translateX(50px);
+    color: rgba(255, 0, 0, 0.5);
+}
+
 header h1 {
+    font-weight: bolder;
     margin: 45px 0px 0px 10px;
+    transition: transform 1s;
+
 }
 
 .logo img {
@@ -21,23 +37,27 @@ nav{
 	margin: auto;
 	background-color: rgba(255, 0, 0, 0.5);
 	font-size: 15px;
-	margin-top: 50px;
+	margin-top: 25px;
 }
+
 .menu-horizontal
 {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
 }
+
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
 	color: white;
 	text-decoration: none;
 }
+
 .menu-horizontal > li:hover{
 	background-color: black;
 }
+
 .menu-vertical{
 	position: absolute;
 	display: none;
@@ -45,9 +65,11 @@ nav{
 	width: 200px;
 	background-color: rgba(0, 0, 0, .5);
 }
+
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
 }
+
 .menu-vertical li:hover{
 	background-color: black;
 }
@@ -60,7 +82,7 @@ nav{
 }
 
 body {
-    background: white;
+    background: white;margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -71,7 +93,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.502);
     color: white;
     
 }

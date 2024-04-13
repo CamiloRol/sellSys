@@ -42,20 +42,24 @@ nav{
     top: 0;
     z-index: 1;
 }
+
 .menu-horizontal{
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
 }
+
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
 	color: white;
 	text-decoration: none;
 }
+
 .menu-horizontal > li:hover{
 	background-color: black;
 }
+
 .menu-vertical{
 	position: absolute;
 	display: none;
@@ -63,9 +67,11 @@ nav{
 	width: 200px;
 	background-color: rgba(0, 0, 0, .5);
 }
+
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
 }
+
 .menu-vertical li:hover{
 	background-color: black;
 }
@@ -112,13 +118,4 @@ body {
 div a {
     text-decoration: none;
     color: rgb(107, 106, 106);
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
-    color: white;
-    position: sticky;
-    bottom: 0;
 }

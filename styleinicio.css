@@ -87,6 +87,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    font-family: "Merriweather", serif;
 }
 
 .container {
@@ -117,12 +118,4 @@ body {
     font-size: 35px;
     color: rgb(107, 106, 106);
     text-align: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
-    color: white;
-    
 }
