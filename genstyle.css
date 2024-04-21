@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(107, 106, 106);
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+}
+
+h1:hover {
+    transform: translateX(50px);
+    color: rgba(255, 0, 0, 0.5);
+}
+
+header h1 {
+    font-weight: bolder;
+    margin: 45px 0px 0px 10px;
+    transition: transform 1s;
+
+}
+
+.logo img {
+    width: 80px;
+    margin: 25px 10px 0px 0px;
+}
+
+nav{
+	margin: auto;
+	background-color: rgba(255, 0, 0, 0.5);
+	font-size: 15px;
+	margin-top: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+	background-color: black;
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+    list-style: disc;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: "Merriweather", serif;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    position: sticky;
+    bottom: 0;
+}
