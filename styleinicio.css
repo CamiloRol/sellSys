@@ -97,19 +97,18 @@ body {
 .container aside {
     display: flex;
     flex: 25%;
-    height: 100vh;
     color: rgb(107, 106, 106);
-    justify-content: center;
+    justify-content: flex-end;
     text-decoration: none;
-    border: 1px solid rgba(255, 0, 0, 0.5);
 }
 
 .container section {
-    border: 1px solid rgba(255, 0, 0, 0.5);
     padding: 5px;
+    flex: 75%;
 }
 
-.content, li, a {
+aside .content li a {
+    list-style: none;
     text-decoration: none;
     color: black;
 }
