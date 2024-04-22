@@ -17,6 +17,7 @@
 }
 
 .interationboxes img{
+    max-width: 100%;
     width: 220px;
     height: 155px;
     position: absolute;
@@ -31,17 +32,21 @@
 .interationboxes.one img {
     top: 52%;
     left: 59%;
+    z-index: 100;
     
 }
 
 .interationboxes.two img {
-    top: 37%;
-    left: 25%;
+    top: 56%;
+    left: 60%;
 }
 
 .interationboxes.three img {
-    top: 60%;
-    left: 48%;
+    width: 300px;
+    height: 250px;
+    top: 45%;
+    left: 60%;
+    z-index: 300;
 }
 
 .interationboxes.one{
@@ -58,6 +63,8 @@
     background-color: lemonchiffon;
 }
 
-@media screen {
-    
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
 }

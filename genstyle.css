@@ -92,6 +92,7 @@ body {
     background-attachment: scroll;
     background-size: cover;
     font-family: "Merriweather", serif;
+    overflow-x: hidden;
 }
 
 
