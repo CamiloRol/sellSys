@@ -1,120 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: rgb(107, 106, 106);
-}
-
-header a {
-    text-decoration: none;
-    color: rgb(107, 106, 106);
-}
-
-h1:hover {
-    transform: translateX(50px);
-    color: rgba(255, 0, 0, 0.5);
-}
-
-header h1 {
-    font-weight: bolder;
-    margin: 45px 0px 0px 10px;
-    transition: transform 1s;
-
-}
-
-.logo img {
-    width: 80px;
-    margin: 25px 10px 0px 0px;
-}
-
-nav{
-	margin: auto;
-	background-color: rgba(255, 0, 0, 0.5);
-	font-size: 15px;
-	margin-top: 25px;
-}
-
-.menu-horizontal
-{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
-}
-.menu-horizontal > li:hover{
-	background-color: black;
-}
-
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: disc;
-	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
-}
-
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-
-.menu-vertical li:hover{
-	background-color: black;
-}
-
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
-}
-
-body {
-    background: white;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    font-family: "Merriweather", serif;
-}
-
 .container {
     display: flex;
-}
-
-.container aside {
-    display: flex;
-    flex: 25%;
-    color: rgb(107, 106, 106);
-    justify-content: flex-end;
-    text-decoration: none;
+    box-shadow: 4px 4px 10px rgb(95, 95, 95);
+    background-color: rgba(95, 95, 95, 0.5);
+    border-radius: 1%;
 }
 
 .container section {
-    padding: 5px;
-    flex: 75%;
-}
-
-aside .content li a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
+    flex: 100%;
 }
 
 .esloga {
+    
     font-size: 35px;
     color: rgb(107, 106, 106);
     text-align: center;
+    position: absolute;
+    top: 151px;
+    right: 247px;
+    z-index: 1;
+}
+
+.whoare {
+    text-align: center;
+    margin: 45px auto;
+}
+
+.content {
+    display: flex;
+    color: rgb(107, 106, 106);
+    background-color: rgba(255, 0, 0,0.5);
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    flex: 20%;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.zonaDes h2{
+    font-size: 12px;
+    margin: 10px 15px;
+}
+
+.content ul{
+    padding: 0;
+}
+
+.zonaDes li{
+    list-style: none;
+}
+
+.zonaDes a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin: auto 15px;
 }

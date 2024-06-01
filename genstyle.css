@@ -4,43 +4,17 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: rgb(107, 106, 106);
-}
-
-header a {
-    text-decoration: none;
-    color: rgb(107, 106, 106);
-}
-
-h1:hover {
-    transform: translateX(50px);
-    color: rgba(255, 0, 0, 0.5);
-}
-
-header h1 {
-    font-weight: bolder;
-    margin: 45px 0px 0px 10px;
-    transition: transform 1s;
-
-}
-
-.logo img {
-    width: 80px;
-    margin: 25px 10px 0px 0px;
-}
-
 nav{
-	margin: auto;
-	background-color: rgba(255, 0, 0, 0.5);
+	background-color: rgb(107, 106, 106);
 	font-size: 15px;
-	margin-top: 25px;
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.logo img {
+    width: 65px;
+    margin: 5px auto;
 }
 
 .menu-horizontal{
@@ -51,6 +25,7 @@ nav{
 
 .menu-horizontal > li > a{
 	display: block;
+    margin: 15px auto;
 	padding: 15px 20px;
 	color: white;
 	text-decoration: none;
@@ -98,9 +73,12 @@ body {
 
 footer {
     display: flex;
-    justify-content: center;
-    background-color: rgba(255, 0, 0, 0.502);
+    justify-content: space-around;
+    background-color: rgb(107, 106, 106);
     color: white;
-    position: sticky;
     bottom: 0;
+}
+
+footer h2 {
+    font-size: 15px;
 }
