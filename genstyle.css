@@ -40,6 +40,7 @@ nav{
 	display: none;
     list-style: disc;
 	width: 200px;
+    z-index: 300;
 	background-color: rgba(0, 0, 0, .5);
 }
 
