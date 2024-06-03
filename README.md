@@ -1,2 +1,2 @@
-# sellSys
-html y css para proyecto integrador
+# Maquetaci-n
+Es aqui donde manejamos las versiones y estados del proyecto integrador
