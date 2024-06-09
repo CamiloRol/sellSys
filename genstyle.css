@@ -76,13 +76,19 @@ body {
 
 
 footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: rgb(107, 106, 106);
     color: white;
     bottom: 0;
+    text-align: center;
 }
 
 footer h2 {
     font-size: 15px;
+}
+
+.rrss img {
+    width: 50px;
+    margin: 55px 55px;
 }
