@@ -40,22 +40,25 @@ nav{
 	display: none;
     list-style: disc;
 	width: 200px;
-    z-index: 300;
+    z-index: 1;
 	background-color: rgba(0, 0, 0, .5);
 }
 
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
+    z-index: 1;
 }
 
 .menu-vertical li:hover{
 	background-color: black;
+    z-index: 1;
 }
 
 .menu-vertical li a{
 	display: block;
 	color: white;
 	text-decoration: none;
+    z-index: 1;
 	padding: 15px 15px 15px 20px;
 }
 
