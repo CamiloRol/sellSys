@@ -2,10 +2,11 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: none;
 }
 
 nav{
-	background-color: rgb(107, 106, 106);
+	background-color: rgb(164, 164, 164);
 	font-size: 15px;
     position: sticky;
     top: 0;
@@ -78,7 +79,7 @@ body {
 footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(164, 164, 164);
     color: white;
     bottom: 0;
     text-align: center;
@@ -91,4 +92,15 @@ footer h2 {
 .rrss img {
     width: 50px;
     margin: 55px 55px;
+}
+
+@media (max-width: 760px){
+    body {
+        overflow-x: none;
+    }
+ 
+}
+
+@media (max-width: 630px){
+
 }
