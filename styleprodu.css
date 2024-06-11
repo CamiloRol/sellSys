@@ -4,45 +4,6 @@
     box-sizing: border-box;
 }
 
-/* header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: rgb(107, 106, 106);
-}
-
-header a {
-    text-decoration: none;
-    color: rgb(107, 106, 106);
-}
-
-h1:hover {
-    transform: translateX(50px);
-    color: rgba(255, 0, 0, 0.5);
-}
-
-header h1 {
-    font-weight: bolder;
-    margin: 45px 0px 0px 10px;
-    transition: transform 1s;
-
-}
-
-.logo img {
-    width: 80px;
-    margin: 25px 10px 0px 0px;
-} */
-
-nav{
-	margin: auto;
-	background-color: rgba(255, 0, 0, 0.5);
-	font-size: 15px;
-	margin-top: 25px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
 .menu-horizontal{
 	list-style: none;
 	display: flex;
@@ -96,26 +57,23 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 25% 25%;
-    justify-content: space-around;
+    grid-template-columns: 50% 50%;
 }
 
-.container div {
+.card {
     width: 150px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 150px;
 }
 
-.container img {
-    width: 250px;
-    height: 200px;
+.card img {
+    width: 100%;
     margin-top: 10px;
     border-radius: 15px;
     border: 1px solid rgb(107, 106, 106);
 }
 
-div a {
+.card a {
     text-decoration: none;
     color: rgb(107, 106, 106);
 }

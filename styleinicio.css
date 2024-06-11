@@ -1,10 +1,7 @@
 
-.container {
-    display: flex;
-}
-
-.container section {
-    flex: 100%;
+.container-fluid {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .esloga {
@@ -12,14 +9,14 @@
     font-size: 35px;
     color: rgb(107, 106, 106);
     text-align: center;
-    margin: 100px auto;
+    margin: 100px 25px;
     z-index: 2;
 }
 
 .carousel  {
-    width: 650px;
+    width: 100%;
     box-shadow: 4px 4px 10px rgb(95, 95, 95);
-    border-radius: 1%;
+    margin-bottom: 35px;
 }
 
 .whoare {
@@ -86,4 +83,28 @@ h2 {
     font-size: 16px;
     color: black;
     margin: auto 15px;
+}
+
+@media (max-width: 760px){
+    .container-fluid {
+        grid-template-columns: 100%;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .card {
+        margin-left: 45px;
+    }
+
+    .card:nth-child(5){
+        margin: 15px 200px;
+        width: 100%;
+    }
+
+    .whoare {
+        flex-direction: column;
+    }
 }
