@@ -76,19 +76,12 @@ body {
 
 
 footer {
-    display: grid;
-    grid-template-columns: 50% 50%;
     background-color: rgb(164, 164, 164);
     color: white;
     bottom: 0;
-    text-align: center;
+    align-content: center;
 }
 
 footer h2 {
     font-size: 15px;
-}
-
-.rrss img {
-    width: 50px;
-    margin: 55px 55px;
 }

@@ -55,7 +55,7 @@ body {
     font-family: "Merriweather", serif;
 }
 
-.container {
+.one{
     display: grid;
     grid-template-columns: 50% 50%;
 }
